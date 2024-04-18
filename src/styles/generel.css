@@ -1,0 +1,53 @@
+/* ------ css reset ------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "obviously", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 0 10px 0;
+  font-size: 42px;
+}
+
+h2 {
+  font-family: "archivo-variable", sans-serif;
+  font-variation-settings: "wdth" 120, "wght" 700;
+  padding: 10px 0 10px 0;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "archivo-variable", sans-serif;
+  font-variation-settings: "wdth" 120, "wght" 600;
+  padding: 10px 0 10px 0;
+  font-size: 24px;
+}
+
+/* semi-condensed */
+p {
+  font-family: "archivo-variable", sans-serif;
+  font-variation-settings: "wdth" 70, "wght" 400;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+}
+
+/* Farver */
+html {
+  --brandcolor: #f7c7d9;
+  --primary: #273aaa;
+  --secondary: #fc4d5c;
+  --accent1: #d1ecef;
+  --accent2: #1d1d1b;
+  --accent3: #fff5eb;
+  --body-tea: #fafafa;
+}

@@ -1,0 +1,59 @@
+---
+import "../styles/generel.css";
+---
+
+<div class="border">
+  <h2 style="color: var(--secondary);">Cssbibliotek:</h2>
+  <div class="grid1-1"><h3>Farver:</h3><h3>Fonte:</h3></div>
+  <div class="grid1-1">
+    <div class="flex">
+      <div style="background-color: var(--brandcolor);" class="container1"><p>var(--brandcolor)</p></div>
+      <div style="background-color: var(--primary);" class="container1"><p style="color: var(--body-tea);">var(--primary)</p></div>
+      <div style="background-color: var(--secondary);" class="container1"><p>var(--secondary)</p></div>
+
+      <div style="background-color: var(--accent1);" class="container1"><p>var(--accent1)</p></div>
+      <div style="background-color: var(--accent2);" class="container1"><p style="color: var(--body-tea);">var(--accent2)</p></div>
+      <div style="background-color: var(--accent3);" class="container1"><p>var(--accent3)</p></div>
+      <div style="background-color: var(--body-tea);" class="container1"><p>var(--body-tea)</p></div>
+    </div>
+    <div class="flex">
+      <div class="container2"><h1>HEADER 1, OBVIOUSLY BOLD 42px</h1></div>
+      <div class="container2"><h2>Header 2, Archivo semi bold, medium expanded 32px</h2></div>
+      <div class="container2"><h3>Header 3, Archivo semi bold, medium expanded 24px</h3></div>
+      <div class="container2"><p>Paragraph, Archivo semi condensed 16px</p></div>
+    </div>
+  </div>
+</div>
+<style>
+  .grid1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .container1 {
+    min-width: 7rem;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    max-height: 4rem;
+  }
+  .container2 {
+    max-width: auto;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .border {
+    background-color: var(--accent3);
+    border: var(--brandcolor) 2px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+  }
+</style>
