@@ -1,0 +1,127 @@
+---
+import "../styles/generel.css";
+---
+
+<article class="hero-img">
+        <div class="hero-fill ">
+            <div class="hero-text">
+                <h1 class="titel1">HVAD HAR DU</h1>
+                <h1 class="titel2">MED I</h1>
+                 <h1 class="titel3">TASKEN?</h1>
+            </div>
+            <div class="hero-button"> <a href= "#items"> <h3>Se indhold </h3></a></div>
+          <span></span>
+        </div>     
+    </article>
+
+    <article class="items container">
+        <div>
+        <div class="piller"><div></div></div>
+        <div class="kondom"><div></div></div>
+        <div class="telefon"><div></div></div>
+        <div class="computer"><div></div></div>
+        <div class="p_piller"><div></div></div>
+        <div class="lipgloss"><div></div></div>
+        <div class="bind"><div></div></div>
+        <div class="satisfyer"><div></div></div>
+        <div class="skraber"><div></div></div>
+    </div>
+    </article>
+
+<style>
+.hero-text{
+    
+}
+    h1 {
+margin-bottom: -2.5rem;
+  transition: 0.2s ease-in;
+  color: var(--accent3) ;
+  -webkit-text-stroke: var(--brandcolor) 1px;
+}
+.titel2{
+    margin-left: 5rem;
+}
+.titel3{
+   padding-left: 10rem;
+}
+  .hero-fill{
+        background-image: url("/bluepurse.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    z-index: -1;
+    transition: 0.5s;
+/*container for tekst og knap til section
+gør så man kan align tekst og knap indenfor sit grid*/
+margin-left: 1rem;
+margin-right: 1rem;
+  display: grid;
+  justify-content: center;
+  text-align: left;
+ height: 85vh;
+
+
+    }
+
+    .hero-img{
+        height:90vh;
+    width: 100%;
+    background-color: var(--brandcolor);
+    padding-top: 2rem;
+    }
+
+
+
+.hero-button {
+ background-color: var(--accent3);
+  height: auto;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 6px 6px 0px var(--primary);
+  /*placerer item i midten*/
+  margin: auto;
+  transition: 0.5s;
+}
+.hero-button a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.hero-button:hover{
+    background-color: var(--primary);
+    box-shadow: 6px 6px 0px var(--accent3);
+    transition: 0.5s;
+}
+.hero-button:hover a{
+    color: var(--accent3);
+}
+.container{
+    width: 100%;
+  aspect-ratio: 9/16;
+  position: relative;
+  container-type: inline-size;
+  background-color: var(--accent3);
+}
+
+.piller{
+    top: 1;
+    aspect-ratio: 106.74/68.83;
+    position: absolute;
+}
+.piller div{
+    width: 100%;
+  height: 100%;
+      background-image: url(/piller.svg);
+    background-size: cover;
+}
+@media (min-width: 900px) {
+    h1{
+        margin: -3rem 0 -3rem 0;
+        font-size: 3.8rem;
+    }
+
+.hero-fill{
+    justify-content: inherit;
+}
+}
+    
+</style>
