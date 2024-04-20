@@ -3,39 +3,18 @@ const { bgcolor, src, alt } = Astro.props;
 import "../styles/generel.css";
 ---
 
-<div class="media-container">
-  <img class="media" src={src} alt={alt} width="800" height="622" />
-  <span class="media mediaunderlay"></span>
-</div>
+<img class={bgcolor} src={src} alt={alt} width="800" height="622" />
 
 <style>
-  .media-container {
-    position: relative;
-  }
-  .media {
-    width: 100%;
-    height: 100%;
-  }
-  .mediaunderlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    z-index: 11;
-
-    margin-left: 1rem;
-    margin-top: 1rem;
-
-    background-color: var(--primary);
-
-    border-radius: 5px;
-  }
-
   img {
     border-radius: 5px;
   }
 
   .primarybg {
-    background-color: var(--primary);
+    box-shadow: 18px 18px 0px 2px var(--primary);
+  }
+
+  .brandcolorbg {
+    box-shadow: 18px 18px 0px 2px var(--primary);
   }
 </style>
