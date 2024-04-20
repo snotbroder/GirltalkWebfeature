@@ -1,0 +1,42 @@
+---
+import "../styles/generel.css";
+
+const { bgcolor, headcolor, textcolor } = Astro.props;
+---
+
+<section class={bgcolor}>
+  <h1 class={headcolor}><slot /></h1>
+  <p class={textcolor}></p>
+</section>
+
+<style>
+  section {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .primary {
+    background-color: var(--primary);
+    color: var(--primary);
+  }
+
+  .secondary {
+    background-color: var(--secondary);
+    color: var(--secondary);
+  }
+
+  .brandcolor {
+    background-color: var(--brandcolor);
+  }
+
+  .accent1 {
+    color: var;
+  }
+  .accent2 {
+    color: var(--accent2);
+  }
+
+  .accent3 {
+    color: var(--accent3);
+  }
+</style>

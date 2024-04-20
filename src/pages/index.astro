@@ -1,5 +1,6 @@
 ---
 import CssBibliotek from "../components/CssBibliotek.astro";
+import Section from "../components/Section.astro";
 ---
 
 <html lang="en">
@@ -14,6 +15,9 @@ import CssBibliotek from "../components/CssBibliotek.astro";
   </head>
   <body>
     <h1>Webfeature</h1>
+    <Section bgcolor="primary" headcolor="accent3" textcolor="accent3">Test section 1 <p>Paragraph</p></Section>
+    <Section bgcolor="secondary" headcolor="accent3" textcolor="accent3">Test section 2 <p>Paragraph</p></Section>
+    <Section bgcolor="brandcolor" headcolor="accent2" textcolor="accent3">Test section 3 <p>Paragraph</p></Section>
     <CssBibliotek />
   </body>
 </html>
