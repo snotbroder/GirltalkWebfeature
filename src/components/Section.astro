@@ -1,36 +1,66 @@
 ---
 import "../styles/generel.css";
 
-const { bgcolor, headcolor, textcolor } = Astro.props;
+const { bgcolor, headcolor, textcolor, emne } = Astro.props;
 ---
 
 <section class={bgcolor}>
-  <h1 class={headcolor}><slot /></h1>
-  <p class={textcolor}></p>
+  <h1 class={headcolor}>{emne}</h1>
+  <p class={textcolor}><slot /></p>
+  <div class="flex1">
+    <a href="#TOP"><img class="pil" src="../../public/arrow-accent1.svg" alt="Arrow" /></a>
+  </div>
 </section>
 
 <style>
   section {
     height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
   }
-  .primary {
+
+  /* bg-colors */
+  .primary-bg {
     background-color: var(--primary);
+  }
+
+  .secondary-bg {
+    background-color: var(--secondary);
+  }
+
+  .brandcolor-bg {
+    background-color: var(--brandcolor);
+  }
+
+  .accent1-bg {
+    background-color: var(--accent1);
+  }
+  .accent2-bg {
+    background-color: var(--accent2);
+  }
+
+  .accent3-bg {
+    background-color: var(--accent3);
+  }
+
+  .bodytea-bg {
+    background-color: var(--body-tea);
+  }
+
+  /* Textcolors */
+  .primary {
     color: var(--primary);
   }
 
   .secondary {
-    background-color: var(--secondary);
     color: var(--secondary);
   }
 
   .brandcolor {
-    background-color: var(--brandcolor);
+    color: var(--brandcolor);
   }
 
   .accent1 {
-    color: var;
+    color: var(--accent1);
   }
   .accent2 {
     color: var(--accent2);
@@ -38,5 +68,27 @@ const { bgcolor, headcolor, textcolor } = Astro.props;
 
   .accent3 {
     color: var(--accent3);
+  }
+  .bodytea {
+    color: var(--body-tea);
+  }
+
+  /* PIL */
+  .flex1 {
+    display: flex;
+    justify-content: end;
+  }
+
+  .pil {
+    max-width: 2rem;
+  }
+
+  p {
+    line-height: 1.4rem;
+  }
+
+  /* SKAL I GENEREL.CSS */
+  html {
+    scroll-behavior: smooth;
   }
 </style>
