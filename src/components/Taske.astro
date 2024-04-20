@@ -6,15 +6,19 @@ import "../styles/generel.css";
         <div class="hero-fill ">
             <div class="hero-text">
                 <h1 class="titel1">HVAD HAR DU</h1>
-                <h1 class="titel2">MED I</h1>
+                <div class="flex"> 
+                    <h1 class="titel2">MED I</h1>
                  <h1 class="titel3">TASKEN?</h1>
+                </div>
+               
             </div>
             <div class="hero-button"> <a href= "#items"> <h3>Se indhold </h3></a></div>
           <span></span>
+          <div class="taske"></div>
         </div>     
     </article>
 
-    <article class="items container">
+    <article class="container" id="items">
         <div>
         <div class="piller item"><a href=""> 
             <img src="/piller.svg" alt="piller"></a></div>
@@ -28,12 +32,20 @@ import "../styles/generel.css";
         <div class="skraber item"><a href=""><img src="/skraber.svg" alt="skraber"></a></div>
     </div>
     </article>
+<script>
+const button = document.querySelector(".hero-button")
+button.addEventListener("mousedown", clickButton)
 
-<style>
-.hero-text{
-    
+function clickButton (){
+    console.log(clickButton)
+    document.getElementById("items").style.display = "inherit";
 }
-    h1 {
+</script>
+<style>
+.taske{
+    display: none;
+}
+h1 {
 margin-bottom: -2.5rem;
   transition: 0.2s ease-in;
   color: var(--accent3) ;
@@ -65,6 +77,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
     width: 100%;
     background-color: var(--brandcolor);
     padding-top: 2rem;
+    transition: 0.2s;
     }
 .hero-button {
     background-color: var(--accent3);
@@ -91,44 +104,24 @@ gør så man kan align tekst og knap indenfor sit grid*/
 
 /* items i tasken */
 .container{
+    display: none;
     position: relative;
-    height: 99vh;
+    height: 90vh;
     background-color: var(--accent3);
+    container-type: inline-size;
+    overflow: hidden;
 }
 .item{
     position: absolute;
     transition: 0.2s;
 }
 .item:hover{
-    animation-name: drej_kf;
-  animation-duration: 1.5s;
-  animation-iteration-count:1;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  transition: 0.2s;
+    rotate: 12deg;
+    transition: 0.2s;
 }
 
-@keyframes drej_kf {
-0{
 
-}
-  50% {
-    rotate: 20deg;
-  }
 
-  100% {
-    rotate: -10deg;
-  }
-}
-.piller{
-    top: 5%;
-    left: 20%;
-    width: 22%;
-    position: absolute;
-}
-.piller rect{
-    fill:red;
-}
 .kondom{
     top: 30%;
     left: 5%;
@@ -147,7 +140,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
     fill: red;
 }
 .bind{
-    bottom:33%;
+    bottom:30%;
     right: 8%;
     width: 30%;
     rotate: 8deg;
@@ -175,16 +168,43 @@ rotate: -10deg;
     bottom: 5%;
     left: 25%;
     width: 22%;
-}
+} 
 @media (min-width: 900px) {
+    .taske{
+        
+    display: block;
+}
+.hero-button{
+    display: none;
+}
     h1{
-        margin: -3rem 0 -3rem 0;
-        font-size: 3.8rem;
+        margin: -1.5rem 0 -1rem 0;
+        font-size: 4rem;
     }
 
-.hero-fill{
+/* .hero-fill{
     justify-content: inherit;
+} */
+.flex{
+    display: flex;
+    padding: 0;  
+    gap: 1rem;
 }
+.flex h1{
+    padding: 0;
+}
+.titel2{
+    margin-left: 12rem;
+}
+.hero-img{
+    height:92vh;
+    transition: 0.2s;
+    padding-top:1rem ;
+    }
+    .hero-fill{
+        height:88vh; 
+    }
+
 }
     
 </style>
