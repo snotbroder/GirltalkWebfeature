@@ -1,0 +1,64 @@
+---
+//import "../styles/generel.css";
+---
+<section>
+    <div class="chat">
+      
+      <p class="chat">
+    <img class="hjerte" src="/hjerte.svg" alt="hjerte" />
+    <span class="chat-text">Chat med os i dag fra 18:30 - 24:00</span>
+</p>
+
+    </div>
+    
+
+</section>
+
+<style>
+  section{
+    background-color:#273aaa;
+
+  }
+.chat {
+    display: flex; 
+      height: 10vh; 
+    align-items: center; 
+    justify-content: center; 
+    
+    
+}
+
+
+.chat img {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 15px; 
+}
+
+.chat .chat-text {
+    color: var(--brandcolor);
+    font-size: 17px;
+    text-align: center;
+     font-family: "archivo-variable", sans-serif;
+  font-size: px;
+  font-variation-settings:  "wght" 500;
+
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hjerte {
+  animation: pulse 1.5s infinite; /* Apply the pulsating animation to the logo */
+}
+
+
+</style>

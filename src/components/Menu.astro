@@ -1,0 +1,84 @@
+---
+import "../styles/generel.css";
+---
+
+<nav class="navbar">
+    <img class="logo" src="/logo.svg" alt="logo" />
+    <ul class="nav-menu">
+        <li><a href="#">Få hjælp</a></li>
+        <li><a href="#">Viden om</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Støt</a></li>
+        <li><a href="#">Bliv frivillig</a></li>
+    </ul>
+    <div class="knap">
+    <button class="knap1">For unge</button>
+        <button class="knap2">For forældre</button>
+        </div>
+</nav>
+
+
+<style>
+.navbar {
+    background-color: #ffffff; 
+    padding: 20px 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo {
+    width: 299px;
+    height: 15px;
+    margin-left: -80px; /* Adjust the margin to move the logo more to the left */
+}
+
+
+
+.nav-menu {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-menu li {
+    margin-right: 40px; 
+}
+
+.nav-menu li:last-child {
+    margin-right: 0; 
+}
+
+
+
+
+.nav-menu li a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+      font-family: "archivo-variable", sans-serif;
+  font-size: 18px;
+    font-variation-settings:  "wght" 500;
+
+}
+.knap1, .knap2{
+    background-color:var(--secondary); 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 5px 20px;
+    font-size: 16px; 
+    cursor: pointer;
+      font-family: "archivo-variable", sans-serif;
+  font-size: 15px;
+  font-variation-settings:  "wght" 500;
+}
+
+
+.knap1:hover, .knap2:hover{
+    opacity: 0.5; 
+}
+
+
+</style>
