@@ -1,13 +1,15 @@
 ---
-const { bgcolor, src, alt } = Astro.props;
+const { src, alt, anim } = Astro.props;
 import "../styles/generel.css";
 ---
 
-<img class={bgcolor} src={src} alt={alt} width="800" height="622" />
+<img class={anim} src={src} alt={alt} width="800" height="622" />
 
 <style>
   img {
     border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem 0 1rem 0;
   }
 
   .primarybg {
@@ -16,5 +18,11 @@ import "../styles/generel.css";
 
   .brandcolorbg {
     box-shadow: 18px 18px 0px 2px var(--primary);
+  }
+
+  @media (min-width: 900px) {
+    img {
+      max-width: 20rem;
+    }
   }
 </style>

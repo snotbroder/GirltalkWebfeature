@@ -1,0 +1,85 @@
+.anim1 {
+  animation: anim1_kf 7s ease 0s normal forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes anim1_kf {
+  0% {
+    transform: translate(0);
+    box-shadow: 16px 16px 0px 2px var(--primary);
+    border-radius: 5px;
+  }
+
+  50% {
+    box-shadow: 4px 4px 0px 0px var(--primary);
+    transform: translate(5px, 5px);
+  }
+
+  100% {
+    transform: translate(0);
+    box-shadow: 16px 16px 0px 2px var(--primary);
+    border-radius: 5px;
+  }
+}
+
+.anim2 {
+  animation: anim2_kf 7s ease 0s normal forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes anim2_kf {
+  0% {
+    transform: translate(0);
+    box-shadow: 16px 16px 0px 2px var(--brandcolor);
+    border-radius: 5px;
+  }
+
+  50% {
+    box-shadow: 4px 4px 0px 0px var(--brandcolor);
+    transform: translate(5px, 5px);
+  }
+
+  100% {
+    transform: translate(0);
+    box-shadow: 16px 16px 0px 2px var(--brandcolor);
+    border-radius: 5px;
+  }
+}
+
+/* Pil animation */
+.pil:hover {
+  animation: pilAnim_kf 1s ease 0s 1 normal forwards;
+}
+.pil:active {
+  animation: pilAnim_kf 1s ease 0s 1 normal forwards;
+  filter: brightness(0) saturate(100%) invert(40%) sepia(32%) saturate(2949%) hue-rotate(325deg) brightness(101%) contrast(98%);
+}
+@keyframes pilAnim_kf {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
