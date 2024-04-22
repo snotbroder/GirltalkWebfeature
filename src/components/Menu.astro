@@ -1,0 +1,149 @@
+---
+import "../styles/generel.css";
+---
+
+<nav class="navbar">
+    <img class="logo" src="/logo.svg" alt="logo" />
+    <ul class="nav-menu">
+        <li><a href="#">Få hjælp</a></li>
+        <li><a href="#">Viden om</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Støt</a></li>
+        <li><a href="#">Bliv frivillig</a></li>
+    </ul>
+    <div class="knap">
+    <button class="knap1">For unge</button>
+        <button class="knap2">For forældre</button>
+        </div>
+
+         <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</nav>
+
+
+<style>
+.navbar {
+    background-color: #ffffff; 
+    padding: 20px 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo {
+    width: 299px;
+    height: 15px;
+    margin-left: -80px; /* Adjust the margin to move the logo more to the left */
+}
+
+
+
+.nav-menu {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-menu li {
+    margin-right: 40px; 
+}
+
+.nav-menu li:last-child {
+    margin-right: 0; 
+}
+
+
+
+
+.nav-menu li a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+      font-family: "archivo-variable", sans-serif;
+  font-size: 18px;
+    font-variation-settings:  "wght" 500;
+
+}
+.knap1, .knap2{
+    background-color:var(--secondary); 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 5px 20px;
+    font-size: 16px; 
+    cursor: pointer;
+      font-family: "archivo-variable", sans-serif;
+  font-size: 15px;
+  font-variation-settings:  "wght" 500;
+}
+
+
+.knap1:hover, .knap2:hover{
+    opacity: 0.5; 
+}
+
+.burger-menu {
+    display: none; 
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {     .burger-menu {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .knap{
+        display: none; 
+    }
+    .nav-menu {
+        display: none; 
+    }
+
+    .burger-menu.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-menu.active .line:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger-menu.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .navbar.active .nav-menu {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        border-top: 1px solid #cccccc;
+    }
+}
+
+
+
+</style>
+
+ <script>
+    
+    document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.burger-menu').classList.toggle('active');
+    document.querySelector('.navbar').classList.toggle('active');
+});
+
+

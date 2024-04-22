@@ -43,6 +43,7 @@ p {
 
 /* Farver */
 html {
+  scroll-behavior: smooth;
   --brandcolor: #f7c7d9;
   --primary: #273aaa;
   --secondary: #fc4d5c;
