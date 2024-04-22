@@ -56,10 +56,13 @@ import "../styles/generel.css";
         Når det kommer til sociale medier, er det vigtigt at huske på, at det er okay at sætte grænser og sige nej til ting, der ikke føles rigtige for dig. Vores rådgivere er her for at hjælpe dig med at udvikle sunde vaner og strategier til at beskytte dit mentale velvære online. <br />
         <br />
         Husk, at du ikke er alene. Hos GirlTalk er vi her for at støtte dig og hjælpe dig med at navigere gennem den komplekse verden af sociale medier på en positiv måde. Lad os sammen skabe et online fællesskab, hvor vi støtter hinanden og vokser sammen.
-        <MediaUnderlay anim="anim2" src="/public/images-compressed/pige-telefon.avif" alt="Pige med telefon i hånden" />
+        <div class="grid-1fr-1fr"> <MediaUnderlay src="/pigemedmobil-blue.svg" alt="pige med mobil" />
+        <MediaUnderlay anim="ianim3_1" src="/ikoner.svg" alt="ikoner" /></div>
+       
+        <!-- <MediaUnderlay anim="anim2" src="/socialmedier.webp" alt="sociale medier" /> -->
       </Section>
 
-      <Section arrowcontrast="true" id="lipgloss" tidslinje="tidslinje1" circle="circle1" isrc="/public/lipgloss-pink.svg" ialt="Illustration af lipgloss" emne="SELV­TILLID" bgcolor="primary-bg" headcolor="brandcolor" textcolor="bodytea"
+      <Section arrowcontrast="true" ianim="ianim4" id="lipgloss" tidslinje="tidslinje1" circle="circle1" isrc="/public/lipgloss-pink.svg" ialt="Illustration af lipgloss" emne="SELV­TILLID" bgcolor="primary-bg" headcolor="brandcolor" textcolor="bodytea"
         >At have selvtillid er som at bære en usynlig kappe af styrke og mod. Det er tilliden til, at du kan overvinde udfordringer og nå dine mål. Selvtillid kommer indefra og bygger på en følelse af værdighed og selvrespekt. <br />
         <br />
         Statistikker viser, at selvtillid spiller en afgørende rolle i vores liv, og at unge, der har et sundt niveau af selvtillid, har større sandsynlighed for at trives og lykkes. Det handler om at stole på dine evner og tro på dig selv, selv når tingene bliver svære. <br />
@@ -67,7 +70,9 @@ import "../styles/generel.css";
         <br />
         At arbejde med sin selvtillid handler om at identificere og udfordre negative tankemønstre og erstatte dem med positive og støttende tanker. Det handler også om at omgive sig med mennesker, der støtter og opmuntrer dig, og at lære at acceptere og elske dig selv, præcis som du er. <br />
         <br />Du er altid god nok - Men vi er her, når du bliver i tvivl. Vi er her for at støtte dig og hjælpe dig med at opbygge den selvtillid, der vil guide dig gennem livets udfordringer og modgang. Husk, at du er unik, værdifuld og værdig til al den kærlighed og succes, verden har at tilbyde.
-        <MediaUnderlay anim="anim2" src="/public/images-compressed/pige-portait-glad.avif" alt="Portræt af pige" />
+       <div class="grid-1fr-1fr">
+        <MediaUnderlay anim="ianim3_1" src="/ikoner2.svg" alt="sociale medier" />
+        <MediaUnderlay src="/pigemedspejl.svg" alt="sociale medier" /></div> 
       </Section>
 
       <Section id="bind" icontrast="false" isrc="/public/bind.svg" ialt="Illustration af et bind" ianim="ianim4" tidslinje="tidslinje1" circle="circle1" emne="MENSTR­UATION" bgcolor="bodytea-bg" headcolor="secondary" textcolor="accent2">
@@ -127,6 +132,11 @@ import "../styles/generel.css";
     </main>
   </body>
   <style>
+
+    .grid-1fr-1fr{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     html {
       background-color: var(--brandcolor);
     }
