@@ -8,6 +8,7 @@ import Menu from "../components/Menu.astro";
 import MediaUnderlay from "../components/MediaUnderlay.astro";
 import Piechart from "../components/Piechart.astro";
 import "../styles/animation.css";
+import "../styles/generel.css";
 ---
 
 <html lang="en">
@@ -122,14 +123,13 @@ import "../styles/animation.css";
         <br />
         Når det kommer til at tackle alkohol og gruppepres, kan det være en god idé at snakke med dine forældre eller en betroet voksen om dine bekymringer og oplevelser. De kan give dig støtte og vejledning til at navigere gennem disse udfordringer på en sund og sikker måde.</Section
       >
-
-      <Section bgcolor="primary" headcolor="accent3" textcolor="accent3">Test section 1 <p>Paragraph</p></Section>
-      <Section bgcolor="secondary" headcolor="accent3" textcolor="accent3">Test section 2 <p>Paragraph</p></Section>
-      <Section bgcolor="brandcolor" headcolor="accent2" textcolor="accent3">Test section 3 <p>Paragraph</p></Section>
-      <CssBibliotek />
+      <section class="pink"></section>
     </main>
   </body>
   <style>
+    html {
+      background-color: var(--brandcolor);
+    }
     @media (max-width: 900px) {
       .desktop {
         display: none;
