@@ -30,7 +30,7 @@ import "../styles/generel.css";
         >Vidste du, at kropsbehåring er en naturlig del af kroppens funktion? Vi ønsker at nedbryde tabuer omkring dette emne og give dig information og støtte til at føle dig tryg i din egen krop. Statistikker viser, at flere og flere piger og unge kvinder føler sig pressede til at fjerne kropsbehåring på grund af samfundets forventninger til skønhedsidealer. <br /><br />
         Det er vigtigt at huske, at valget om at fjerne eller beholde kropsbehåring er helt personligt, og at du skal følge det, der føles rigtigt for dig selv. Desværre kan kropsbehåring være et tabubelagt emne, der kan føre til skam og usikkerhed hos mange. Vi ønsker at skabe et åbent rum, hvor piger kan dele deres oplevelser og støtte hinanden uden fordømmelse. <br /><br />
         Vi er her for at støtte dig i at træffe de bedste beslutninger for din egen krop og velvære.
-        <MediaUnderlay anim="anim2" src="/public/images-compressed/gruppe-telefon.avif" alt="Pige i skole" />
+        <MediaUnderlay  src="/kropshaar.svg" alt="Pige i skole" />
       </Section>
 
       <Section id="computer" icontrast="false" isrc="/public/computer.svg" ialt="Illustration af computer" ianim="ianim1" tidslinje="tidslinje2" circle="circle2" emne="SKOLE­TRIVSEL" bgcolor="brandcolor-bg" headcolor="primary" textcolor="accent2"
@@ -46,7 +46,7 @@ import "../styles/generel.css";
         <Piechart variant="pie40p" procent="Vidste du at 40% af piger..." text="har på et tidspunkt i deres skolegang haft det svært ved at gå i skole" />
       </Section>
 
-      <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim2" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
+      <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim5" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
         >Vidste du, at næsten 90% af teenagere i alderen 13-17 år bruger sociale medier regelmæssigt? Hos GirlTalk ønsker vi at udforske dette emne med dig og give dig værktøjer til at navigere i den digitale verden på en sund måde. <br />
         <br />
         Statistikker viser, at overeksponering for sociale medier kan føre til negative effekter på mentalt velvære, især hos unge piger. Det er vigtigt at være opmærksom på disse risici og at finde en balance mellem online og offline aktiviteter. <br />
@@ -81,7 +81,12 @@ import "../styles/generel.css";
         Statistikker viser, at menstruationsrelaterede smerter påvirker op til 80% af kvinder på et eller andet tidspunkt i deres liv. Det er vigtigt at kende dine muligheder for at lindre disse smerter og finde det, der virker bedst for dig. Vi er her for at give dig de bedste råd til at håndtere disse udfordringer. <br />
         <br />
         Desværre er menstruation stadig et tabubelagt emne i mange samfund, hvilket kan føre til manglende viden og støtte til dem, der har brug for det. Hos GirlTalk ønsker vi at bryde denne tavshed og skabe et rum, hvor piger kan dele deres oplevelser og støtte hinanden. Vi er her for dig, uanset hvad du har brug for at tale om. <br />
-        <br />
+      
+        <span class="grid-1fr-1fr">
+          <MediaUnderlay  src="/mens2.svg" alt="illustration af pussy" />
+          <MediaUnderlay anim="ianim" src="/bind2.svg" alt="vibrator" />
+          <MediaUnderlay  src="/mens1.svg" alt="illustration af en pusysy" />
+        </span>
         Når det kommer til menstruation, er det vigtigt at finde det rigtige produkt, der passer til dine behov og krop. Vores rådgivere kan give dig information om forskellige typer af menstruationsprodukter og hjælpe dig med at træffe det bedste valg for dig. Vi vil gerne hjælpe dig med at føle dig tryg og godt forberedt. <br />
         <br />
         Husk, at menstruation er en naturlig del af livet, og du fortjener at føle dig komfortabel og velinformeret. Hos GirlTalk er vi her for at støtte dig og hjælpe dig med at navigere gennem denne periode på en positiv måde. Vi er din støtte, når du har brug for det mest.
@@ -122,9 +127,9 @@ import "../styles/generel.css";
         <br />
         Husk, at dit sexliv skal være sjovt, sikkert og behageligt for dig og din partner. Vi er her for at støtte dig i at navigere gennem kompleksiteten af sex og grænser og hjælpe dig med at træffe informerede beslutninger, der er rigtige for dig.
        <div class="grid-1fr-1fr">
-        <MediaUnderlay  src="/pinkpus.svg" alt="illustration af pussy" />
-        <MediaUnderlay  src="/satisfyerdown.svg" alt="vibrator" />
-        
+        <MediaUnderlay anim="ianim4" src="/pinkpus.svg" alt="illustration af pussy" />
+        <MediaUnderlay anim="ianim5" src="/satisfyerdown.svg" alt="vibrator" />
+        <MediaUnderlay anim="ianim4" src="/pinkpus2.svg" alt="illustration af en pusysy" />
         </div>
       </Section>
       <Section arrowcontrast="true" tidslinje="tidslinje1" circle="circle1" emne="ALKOHOL" bgcolor="primary-bg" headcolor="secondary" textcolor="bodytea"
@@ -142,8 +147,7 @@ import "../styles/generel.css";
   <style>
 
     .grid-1fr-1fr{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
     }
     html {
       background-color: var(--brandcolor);
