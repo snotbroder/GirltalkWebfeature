@@ -1,0 +1,27 @@
+---
+import "../styles/generel.css";
+const { isrc, ialt, ianim, icontrast } = Astro.props;
+---
+
+<span class="desktop">
+  <div class={ianim}>
+    <img class={icontrast} src={isrc} alt={ialt} />
+  </div>
+</span>
+<style>
+  img {
+    margin-top: 13rem;
+    margin-bottom: auto;
+    width: 12vw;
+    z-index: 200;
+  }
+  img .true {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(32%) saturate(2949%) hue-rotate(325deg) brightness(101%) contrast(98%);
+  }
+
+  @media (max-width: 900px) {
+    .desktop {
+      display: none;
+    }
+  }
+</style>

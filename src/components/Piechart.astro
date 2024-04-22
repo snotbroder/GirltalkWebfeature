@@ -1,0 +1,63 @@
+---
+import "../styles/generel.css";
+const { variant, text, procent } = Astro.props;
+---
+
+<div class="flex">
+  <div class="col1">
+    <div class="container">
+      <div class={variant}></div>
+    </div>
+  </div>
+  <div class="col2"><h3>{procent}</h3><p>{text}</p></div>
+</div>
+
+<style>
+  .container {
+    position: inherit;
+    display: flex;
+    width: 50%;
+
+    flex-direction: column;
+    justify-content: end;
+  }
+  h3 {
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--secondary);
+  }
+  .pie20p {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    background-image: url(/public/Piechart.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pie40p {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    background-image: url(/public/Piechart-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pie60p {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    background-image: url(/public/Piechart-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+  }
+</style>

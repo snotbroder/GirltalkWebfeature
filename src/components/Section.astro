@@ -1,37 +1,76 @@
 ---
 import "../styles/generel.css";
-
-const { bgcolor, headcolor, textcolor } = Astro.props;
-
+import Illustration from "../components/Illustration.astro";
+const { bgcolor, headcolor, textcolor, emne, tidslinje, circle, id } = Astro.props;
+const { isrc, ialt, ianim } = Astro.props;
 ---
 
-<section class={bgcolor}>
-  <h1 class={headcolor}><slot /></h1>
-  <p class={textcolor}></p>
+<section id={id} class={bgcolor}>
+  <div class="grid1-1-3">
+    <div class="col1"><Illustration isrc={isrc} ialt={ialt} ianim={ianim} /></div>
+    <div class="col2">
+      <span class={circle}></span>
+      <span class={tidslinje}></span>
+    </div>
+    <div class="col3">
+      <h1 class={headcolor}>{emne}</h1>
+      <p class={textcolor}><slot /></p>
+      <div class="flex1">
+        <a href="#TOP"><img class="pil" src="/public/arrow-accent1.svg" alt="Arrow" /></a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
   section {
     height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
   }
-  .primary {
+
+  /* bg-colors */
+  .primary-bg {
     background-color: var(--primary);
+  }
+
+  .secondary-bg {
+    background-color: var(--secondary);
+  }
+
+  .brandcolor-bg {
+    background-color: var(--brandcolor);
+  }
+
+  .accent1-bg {
+    background-color: var(--accent1);
+  }
+  .accent2-bg {
+    background-color: var(--accent2);
+  }
+
+  .accent3-bg {
+    background-color: var(--accent3);
+  }
+
+  .bodytea-bg {
+    background-color: var(--body-tea);
+  }
+
+  /* Textcolors */
+  .primary {
     color: var(--primary);
   }
 
   .secondary {
-    background-color: var(--secondary);
     color: var(--secondary);
   }
 
   .brandcolor {
-    background-color: var(--brandcolor);
+    color: var(--brandcolor);
   }
 
   .accent1 {
-    color: var;
+    color: var(--accent1);
   }
   .accent2 {
     color: var(--accent2);
@@ -39,5 +78,115 @@ const { bgcolor, headcolor, textcolor } = Astro.props;
 
   .accent3 {
     color: var(--accent3);
+  }
+  .bodytea {
+    color: var(--body-tea);
+  }
+
+  /* PIL */
+  .flex1 {
+    display: flex;
+    justify-content: end;
+  }
+
+  .pil {
+    max-width: 2rem;
+    margin-top: 1rem;
+    z-index: 20;
+  }
+
+  p {
+    line-height: 1.4rem;
+  }
+
+  /* Tidslinje */
+  .tidslinje1 {
+    display: block;
+    height: 120%;
+    width: 0.7rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+
+    background-color: var(--brandcolor);
+  }
+
+  .tidslinje2 {
+    display: block;
+    height: 120%;
+    width: 0.7rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+
+    background-color: var(--primary);
+  }
+
+  /* SKAL I GENEREL.CSS */
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 900px) {
+    .grid1-1-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 3fr;
+      gap: 1rem;
+    }
+
+    .col2 {
+      padding-left: 5rem;
+    }
+    section {
+      padding: 2rem 10rem;
+    }
+
+    /* Tidslinje kugle */
+    .circle1 {
+      display: block;
+      background-color: var(--brandcolor);
+      width: 2.5rem;
+      height: 2.5rem;
+      clip-path: circle(48%);
+      z-index: 101;
+      position: relative;
+
+      /* ved sektionskift */
+      /* margin-top: -2rem;
+      margin-bottom: -2rem; */
+
+      /* top: -18px;
+      left: -14.5px; */
+
+      /* ved emnetitel */
+      top: 66px;
+      left: -14.9px;
+
+      margin-top: -2.5rem;
+      margin-bottom: 0;
+    }
+
+    .circle2 {
+      display: block;
+      background-color: var(--primary);
+      width: 2.5rem;
+      height: 2.5rem;
+      clip-path: circle(48%);
+      z-index: 101;
+      position: relative;
+
+      /* ved sektionskift */
+      /* margin-top: -2rem;
+      margin-bottom: -2rem; */
+
+      /* top: -18px;
+      left: -14.5px; */
+
+      /* ved emnetitel */
+      top: 66px;
+      left: -14.9px;
+
+      margin-top: -2.5rem;
+      margin-bottom: 0;
+    }
   }
 </style>
