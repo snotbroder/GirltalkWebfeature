@@ -14,29 +14,35 @@ import "../styles/generel.css";
     <div class="hero-button"><a href="#items"> <h3>Se indhold</h3></a></div>
     <span></span>
     <div class="taske">
-      <div id="1" class="piller item"><a href="#piller"> <img src="/piller.svg" alt="piller" /></a></div>
-      <div id="kondom" class="kondom item"><a href="#kondom"><img src="/kondom.svg" alt="kondom" /></a></div>
-      <div class="telefon item"><a href="#telefon"><img src="/telefon.svg" alt="telefon" /></a></div>
-      <div class="computer item"><a href="#computer"><img src="/computer.svg" alt="computer" /></a></div>
-      <div class="p_piller item"><a href="#p_piller"><img src="/p_piller.svg" alt="p piller" /></a></div>
-      <div class="lipgloss item"><a href="#lipgloss"><img src="/lipgloss.svg" alt="lipgloss" /></a></div>
-      <div class="bind item"><a href="#bind"><img src="/bind.svg" alt="bind" /></a></div>
-      <div class="satisfyer item"><a href="#satisfyer"><img src="/satisfyer.svg" alt="vibrator" /></a></div>
-      <div class="skraber item"><a href="#skraber"><img src="/skraber.svg" alt="skraber" /></a></div>
+      <div class="piller item"><a href="#piller"> <img id="p1" src="/piller.svg" alt="piller" /></a></div>
+      <div class="kondom item"><a href="#kondom"><img id="k1" src="/kondom.svg" alt="kondom" /></a></div>
+      <div class="telefon item"><a href="#telefon"><img id="t1" src="/telefon.svg" alt="telefon" /></a></div>
+      <div class="computer item"><a href="#computer"><img id="c1" src="/computer.svg" alt="computer" /></a></div>
+      <div class="p_piller item"><a href="#p_piller"><img id="p2" src="/p_piller.svg" alt="p piller" /></a></div>
+      <div class="lipgloss item"><a href="#lipgloss"><img id="l1" src="/lipgloss.svg" alt="lipgloss" /></a></div>
+      <div class="bind item"><a href="#bind"><img id="b1" src="/bind.svg" alt="bind" /></a></div>
+      <div class="satisfyer item"><a href="#satisfyer"><img id="s1" src="/satisfyer.svg" alt="vibrator" /></a></div>
+      <div class="skraber item"><a href="#skraber"><img id="s2" src="/skraber.svg" alt="skraber" /></a></div>
     </div>
   </div>
 </article>
+<style>
+  .clicked {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(97%) saturate(1384%) hue-rotate(325deg) brightness(97%) contrast(104%);
+    transition: 0.2s;
+  }
+</style>
 
 <article class="container hide" id="items">
-  <div class="piller item"><a href=""> <img src="/piller.svg" alt="piller" /></a></div>
-  <div class="kondom item"><a href=""><img src="/kondom.svg" alt="kondom" /></a></div>
-  <div class="telefon item"><a href=""><img src="/telefon.svg" alt="telefon" /></a></div>
-  <div class="computer item"><a href=""><img src="/computer.svg" alt="computer" /></a></div>
-  <div class="p_piller item"><a href=""><img src="/p_piller.svg" alt="p piller" /></a></div>
-  <div class="lipgloss item"><a href=""><img src="/lipgloss.svg" alt="lipgloss" /></a></div>
-  <div class="bind item"><a href=""><img src="/bind.svg" alt="bind" /></a></div>
-  <div class="satisfyer item"><a href=""><img src="/satisfyer.svg" alt="vibrator" /></a></div>
-  <div class="skraber item"><a href=""><img src="/skraber.svg" alt="skraber" /></a></div>
+  <div class="piller item"><a href="#piller"> <img id="mp1" src="/piller.svg" alt="piller" /></a></div>
+  <div class="kondom item"><a href="#kondom"><img id="mk1" src="/kondom.svg" alt="kondom" /></a></div>
+  <div class="telefon item"><a href="#telefon"><img id="mt1" src="/telefon.svg" alt="telefon" /></a></div>
+  <div class="computer item"><a href="#computer"><img id="mc1" src="/computer.svg" alt="computer" /></a></div>
+  <div class="p_piller item"><a href="#p_piller"><img id="mp2" src="/p_piller.svg" alt="p piller" /></a></div>
+  <div class="lipgloss item"><a href="#lipgloss"><img id="ml1" src="/lipgloss.svg" alt="lipgloss" /></a></div>
+  <div class="bind item"><a href="#bind"><img id="mb1" src="/bind.svg" alt="bind" /></a></div>
+  <div class="satisfyer item"><a href="#satisfyer"><img id="ms1" src="/satisfyer.svg" alt="vibrator" /></a></div>
+  <div class="skraber item"><a href="#skraber"><img id="ms2" src="/skraber.svg" alt="skraber" /></a></div>
 </article>
 
 <script src="/src/js/test.js"></script>
@@ -285,10 +291,5 @@ gør så man kan align tekst og knap indenfor sit grid*/
       rotate: -5deg;
       width: 15%;
     }
-  }
-
-  .clicked {
-    filter: brightness(0) saturate(100%) invert(40%) sepia(32%) saturate(2949%) hue-rotate(325deg) brightness(101%) contrast(98%);
-    transition: 0.2s;
   }
 </style>
