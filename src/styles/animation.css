@@ -1,5 +1,5 @@
 .anim1 {
-  animation: anim1_kf 7s ease 0s normal forwards;
+  animation: anim1_kf 1s ease 0s normal forwards;
   animation-iteration-count: infinite;
 }
 @keyframes anim1_kf {
@@ -231,4 +231,11 @@
   90% {
     transform: rotate(2deg);
   }
+}
+.delay1 {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 0.5s;
 }

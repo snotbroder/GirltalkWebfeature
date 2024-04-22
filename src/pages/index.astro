@@ -21,8 +21,18 @@ import "../styles/generel.css";
     <link rel="stylesheet" href="https://use.typekit.net/zkh1dpr.css" />
     <title>Webfeature</title>
   </head>
-  <body>
-    <header><Header /><Menu /></header>
+  <body
+    ><Header />
+    <header>
+      <Menu />
+    </header>
+    <style>
+      header {
+        position: sticky;
+        top: 0px;
+        z-index: 500;
+      }
+    </style>
     <main>
       <Taske />
 
@@ -46,7 +56,7 @@ import "../styles/generel.css";
         <Piechart variant="pie40p" procent="Vidste du at 40% af piger..." text="har på et tidspunkt i deres skolegang haft det svært ved at gå i skole" />
       </Section>
 
-      <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim2" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
+      <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim5" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
         >Vidste du, at næsten 90% af teenagere i alderen 13-17 år bruger sociale medier regelmæssigt? Hos GirlTalk ønsker vi at udforske dette emne med dig og give dig værktøjer til at navigere i den digitale verden på en sund måde. <br />
         <br />
         Statistikker viser, at overeksponering for sociale medier kan føre til negative effekter på mentalt velvære, især hos unge piger. Det er vigtigt at være opmærksom på disse risici og at finde en balance mellem online og offline aktiviteter. <br />
@@ -59,7 +69,7 @@ import "../styles/generel.css";
         <MediaUnderlay anim="anim2" src="/public/images-compressed/pige-telefon.avif" alt="Pige med telefon i hånden" />
       </Section>
 
-      <Section arrowcontrast="true" id="lipgloss" tidslinje="tidslinje1" circle="circle1" isrc="/public/lipgloss-pink.svg" ialt="Illustration af lipgloss" emne="SELV­TILLID" bgcolor="primary-bg" headcolor="brandcolor" textcolor="bodytea"
+      <Section arrowcontrast="true" id="lipgloss" tidslinje="tidslinje1" circle="circle1" isrc="/public/lipgloss-pink.svg" ialt="Illustration af lipgloss" ianim="ianim1" emne="SELV­TILLID" bgcolor="primary-bg" headcolor="brandcolor" textcolor="bodytea"
         >At have selvtillid er som at bære en usynlig kappe af styrke og mod. Det er tilliden til, at du kan overvinde udfordringer og nå dine mål. Selvtillid kommer indefra og bygger på en følelse af værdighed og selvrespekt. <br />
         <br />
         Statistikker viser, at selvtillid spiller en afgørende rolle i vores liv, og at unge, der har et sundt niveau af selvtillid, har større sandsynlighed for at trives og lykkes. Det handler om at stole på dine evner og tro på dig selv, selv når tingene bliver svære. <br />
