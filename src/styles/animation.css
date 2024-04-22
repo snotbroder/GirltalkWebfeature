@@ -44,14 +44,6 @@
   }
 }
 
-/* Pil animation */
-.pil:hover {
-  animation: pilAnim_kf 1s ease 0s 1 normal forwards;
-}
-.pil:active {
-  animation: pilAnim_kf 1s ease 0s 1 normal forwards;
-  filter: brightness(0) saturate(100%) invert(40%) sepia(32%) saturate(2949%) hue-rotate(325deg) brightness(101%) contrast(98%);
-}
 @keyframes pilAnim_kf {
   0%,
   100% {

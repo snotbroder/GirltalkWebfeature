@@ -1,0 +1,21 @@
+---
+import "../styles/generel.css";
+---
+
+<a href="#forside"> <img class="pil" src="/public/arrow1.svg" alt="Arrow" /></a>
+<style>
+  .pil {
+    max-width: 2rem;
+    margin-top: 1rem;
+    z-index: 20;
+  }
+
+  /* Pil animation */
+  .pil:hover {
+    animation: pilAnim_kf 1s ease 0s 1 normal forwards;
+  }
+  .pil:active {
+    animation: pilAnim_kf 1s ease 0s 1 normal forwards;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(32%) saturate(2949%) hue-rotate(325deg) brightness(101%) contrast(98%);
+  }
+</style>

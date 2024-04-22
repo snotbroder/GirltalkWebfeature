@@ -1,8 +1,10 @@
 ---
 import "../styles/generel.css";
+import "../styles/animation.css";
 import Illustration from "../components/Illustration.astro";
+import Pil from "./Pil.astro";
 const { bgcolor, headcolor, textcolor, emne, tidslinje, circle, id } = Astro.props;
-const { isrc, ialt, ianim } = Astro.props;
+const { isrc, ialt, ianim, arrowcontrast } = Astro.props;
 ---
 
 <section id={id} class={bgcolor}>
@@ -16,11 +18,19 @@ const { isrc, ialt, ianim } = Astro.props;
       <h1 class={headcolor}>{emne}</h1>
       <p class={textcolor}><slot /></p>
       <div class="flex1">
-        <a href="#forside"><img class="pil" src="/public/arrow-accent1.svg" alt="Arrow" /></a>
+        <div class={arrowcontrast}>
+          <Pil />
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .true {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(12%) saturate(936%) hue-rotate(298deg) brightness(109%) contrast(94%);
+  }
+</style>
 
 <style>
   section {
@@ -87,12 +97,6 @@ const { isrc, ialt, ianim } = Astro.props;
   .flex1 {
     display: flex;
     justify-content: end;
-  }
-
-  .pil {
-    max-width: 2rem;
-    margin-top: 1rem;
-    z-index: 20;
   }
 
   p {
