@@ -5,13 +5,13 @@ const { tegn, text } = Astro.props;
 ---
 
 <div class="outline animNotif2">
-  <div class="icon">{tegn}</div>
+  <span class="icon">{tegn}</span>
   <h3 class="text">{text}</h3>
 </div>
 
 <style>
   .outline {
-    border: solid 6px var(--brandcolor);
+    border: solid 4px var(--brandcolor);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -19,21 +19,24 @@ const { tegn, text } = Astro.props;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  h3{
+    color: var(--brandcolor);
+    font-size: 20px;
+  }
 
   .icon {
     text-align: center;
     color: var(--brandcolor);
-    border: solid 6px var(--brandcolor);
+    border: solid 4px var(--brandcolor);
     border-radius: 20px;
     margin: 0.3rem;
     aspect-ratio: 1/1;
     min-width: 5rem;
-    padding-top: auto;
-    padding-bottom: auto;
     font-family: "obviously", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
+  padding-top: 1rem;
   }
 
   .text {

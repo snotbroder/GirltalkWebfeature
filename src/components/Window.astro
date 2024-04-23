@@ -13,7 +13,7 @@ const { text } = Astro.props;
 
 <style>
   .outline {
-    border: solid 6px var(--primary);
+    border: solid 4px var(--primary);
     border-radius: 20px;
 
     margin-right: 1rem;
@@ -24,8 +24,9 @@ const { text } = Astro.props;
   .topbar {
     max-height: 2rem;
     color: var(--primary);
-    border-bottom: solid 5px var(--primary);
+    border-bottom: solid 4px var(--primary);
     display: block;
+    padding-top: 0.4rem;
     padding-left: 1rem;
     font-size: 3.5rem;
     line-height: 3rem;
@@ -33,6 +34,7 @@ const { text } = Astro.props;
 
   .text {
     margin: 0.4rem;
-    color: var(--accent2);
+    font-size: 20px;
+    color: var(--primary);
   }
 </style>

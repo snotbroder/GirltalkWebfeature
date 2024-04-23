@@ -16,7 +16,7 @@ const { isrc, ialt, ianim, arrowcontrast } = Astro.props;
     </div>
     <div class="col3">
       <h1 class={headcolor}>{emne}</h1>
-      <p class={textcolor}><slot /></p>
+      <div class={textcolor}><div class="test"><slot /></div></div>
       <div class="flex1">
         <div class={arrowcontrast}>
           <Pil />
@@ -99,9 +99,10 @@ const { isrc, ialt, ianim, arrowcontrast } = Astro.props;
     justify-content: end;
   }
 
-  p {
+  p, .test {
     line-height: 1.4rem;
   }
+  
 
   /* Tidslinje */
   .tidslinje1 {
