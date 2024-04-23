@@ -1,0 +1,38 @@
+---
+import "../styles/animation.css";
+import "../styles/generel.css";
+const { text } = Astro.props;
+---
+
+<div class="outline animNotif1">
+  <span class="topbar">°°°</span>
+  <h3 class="text">
+    {text}
+  </h3>
+</div>
+
+<style>
+  .outline {
+    border: solid 6px var(--primary);
+    border-radius: 20px;
+
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .topbar {
+    max-height: 2rem;
+    color: var(--primary);
+    border-bottom: solid 5px var(--primary);
+    display: block;
+    padding-left: 1rem;
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .text {
+    margin: 0.4rem;
+    color: var(--accent2);
+  }
+</style>
