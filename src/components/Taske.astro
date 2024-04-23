@@ -15,6 +15,7 @@ import "../styles/animation.css";
     <div class="hero-button"><a href="#items"> <h3>Se indhold</h3></a></div>
     <span></span>
     <div class="taske">
+    <div id="comp_knap" class="hero-button_comp"><h3>Se indhold</h3></div>
       <div class="piller item ianim3"><a href="#piller"> <img id="p1" src="/piller.svg" alt="piller" /></a></div>
       <div class="kondom item ianim2 delay1"><a href="#kondom"><img id="k1" src="/kondom.svg" alt="kondom" /></a></div>
       <div class="telefon item ianim5 delay1"><a href="#telefon"><img id="t1" src="/telefon.svg" alt="telefon" /></a></div>
@@ -238,6 +239,22 @@ gør så man kan align tekst og knap indenfor sit grid*/
       transition: 0.2s;
       padding-top: 1rem;
     }
+    .hero-button_comp {
+    background-color: var(--accent3);
+    height: auto;
+    width:50%;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 6px 6px 0px var(--primary);
+    /*placerer item i midten*/
+    margin: auto;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    color: var(--primary);
+    position: absolute;
+    top:40%;
+    left:25%
+  }
     .hero-fill {
       height: 88vh;
     }
@@ -251,7 +268,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
       rotate: -12deg;
     }
     .telefon {
-      right: 46%;
+      right: 45%;
       top: 10%;
       rotate: -20deg;
       width: 13%;
