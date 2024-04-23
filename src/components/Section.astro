@@ -7,7 +7,8 @@ const { bgcolor, headcolor, textcolor, emne, tidslinje, circle, id } = Astro.pro
 const { isrc, ialt, ianim, arrowcontrast } = Astro.props;
 ---
 
-<section id={id} class={bgcolor}>
+<span id={id} class="test"></span>
+<section class={bgcolor}>
   <div class="grid1-1-3">
     <div class="col1"><Illustration isrc={isrc} ialt={ialt} ianim={ianim} /></div>
     <div class="col2">
@@ -99,10 +100,10 @@ const { isrc, ialt, ianim, arrowcontrast } = Astro.props;
     justify-content: end;
   }
 
-  p, .test {
+  p,
+  .test {
     line-height: 1.4rem;
   }
-  
 
   /* Tidslinje */
   .tidslinje1 {
