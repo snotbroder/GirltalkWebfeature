@@ -4,6 +4,9 @@ import Section from "../components/Section.astro";
 import MediaUnderlay from "../components/MediaUnderlay.astro";
 import Piechart from "../components/Piechart.astro";
 import "../styles/animation.css";
+
+import Notifikation1 from "../components/Notifikation1.astro";
+import Notifikation2 from "../components/Notifikation2.astro";
 ---
 
 <html lang="en">
@@ -18,6 +21,9 @@ import "../styles/animation.css";
   </head>
   <body>
     <h1 id="TOP">Body-1</h1>
+
+    <Notifikation1 tegn="!">Notifikation 1</Notifikation1>
+    <Notifikation2 tegn="%">Notifikation 2</Notifikation2>
 
     <!--clicked test -->
     <div class="test">
@@ -41,6 +47,7 @@ import "../styles/animation.css";
       >Vidste du, at kropsbehåring er en naturlig del af kroppens funktion? Vi ønsker at nedbryde tabuer omkring dette emne og give dig information og støtte til at føle dig tryg i din egen krop. Statistikker viser, at flere og flere piger og unge kvinder føler sig pressede til at fjerne kropsbehåring på grund af samfundets forventninger til skønhedsidealer. <br /><br />
       Det er vigtigt at huske, at valget om at fjerne eller beholde kropsbehåring er helt personligt, og at du skal følge det, der føles rigtigt for dig selv. Desværre kan kropsbehåring være et tabubelagt emne, der kan føre til skam og usikkerhed hos mange. Vi ønsker at skabe et åbent rum, hvor piger kan dele deres oplevelser og støtte hinanden uden fordømmelse. <br /><br />
       Vi er her for at støtte dig i at træffe de bedste beslutninger for din egen krop og velvære.
+
       <MediaUnderlay anim="anim2" src="/public/images-compressed/gruppe-telefon.avif" alt="Pige i skole" />
     </Section>
 
@@ -60,10 +67,12 @@ import "../styles/animation.css";
     <Section icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim2" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
       >Vidste du, at næsten 90% af teenagere i alderen 13-17 år bruger sociale medier regelmæssigt? Hos GirlTalk ønsker vi at udforske dette emne med dig og give dig værktøjer til at navigere i den digitale verden på en sund måde. <br />
       <br />
+
       Statistikker viser, at overeksponering for sociale medier kan føre til negative effekter på mentalt velvære, især hos unge piger. Det er vigtigt at være opmærksom på disse risici og at finde en balance mellem online og offline aktiviteter. <br />
       <br />
       Desværre kan sociale medier også være en platform for mobning og negativt selvbillede. Hos GirlTalk ønsker vi at skabe et positivt fællesskab, hvor piger kan støtte hinanden og dele positive erfaringer og råd til at tackle disse udfordringer. <br />
       <br />
+
       Når det kommer til sociale medier, er det vigtigt at huske på, at det er okay at sætte grænser og sige nej til ting, der ikke føles rigtige for dig. Vores rådgivere er her for at hjælpe dig med at udvikle sunde vaner og strategier til at beskytte dit mentale velvære online. <br />
       <br />
       Husk, at du ikke er alene. Hos GirlTalk er vi her for at støtte dig og hjælpe dig med at navigere gennem den komplekse verden af sociale medier på en positiv måde. Lad os sammen skabe et online fællesskab, hvor vi støtter hinanden og vokser sammen.

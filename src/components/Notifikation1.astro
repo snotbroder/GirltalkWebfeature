@@ -1,0 +1,43 @@
+---
+import "../styles/animation.css";
+import "../styles/generel.css";
+const { tegn, text } = Astro.props;
+---
+
+<div class="outline animNotif1">
+  <span class="icon">{tegn}</span>
+  <h3 class="text">{text}</h3>
+</div>
+
+<style>
+  .outline {
+    border: solid 6px var(--primary);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    text-align: center;
+    color: var(--primary);
+    border: solid 6px var(--primary);
+    border-radius: 20px;
+    margin: 0.3rem;
+    aspect-ratio: 1/1;
+    min-width: 5rem;
+    padding-top: auto;
+    padding-bottom: auto;
+    font-family: "obviously", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+  }
+
+  .text {
+    margin: 0.4rem;
+    color: var(--accent2);
+  }
+</style>
