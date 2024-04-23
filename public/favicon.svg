@@ -1,9 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="75" height="75">
+<path d="M0 0 C2.23952952 1.62644416 2.23952952 1.62644416 6.078125 1.27734375 C7.3775 0.10171875 7.3775 0.10171875 8.703125 -1.09765625 C12.67234886 -4.58817974 16.8617777 -5.52291394 22.078125 -5.72265625 C28.10446436 -5.09397703 32.0692411 -3.22610538 36.140625 1.27734375 C40.82944039 7.10250734 40.81649358 13.03599408 40.078125 20.27734375 C36.42202155 33.06393016 23.90877487 44.0666071 14.078125 52.27734375 C13.26988281 52.99535156 12.46164063 53.71335938 11.62890625 54.453125 C10.84902344 55.11699219 10.06914063 55.78085938 9.265625 56.46484375 C8.57855469 57.05652344 7.89148437 57.64820313 7.18359375 58.2578125 C5.078125 59.27734375 5.078125 59.27734375 2.7734375 58.8359375 C-0.95138824 56.68201653 -4.02950504 54.00849104 -7.234375 51.15234375 C-7.90082031 50.56412842 -8.56726563 49.97591309 -9.25390625 49.36987305 C-20.48541688 39.39560061 -31.40487729 29.41332543 -33.359375 13.77734375 C-32.62208952 7.87905994 -30.61169035 2.45213174 -26.171875 -1.66015625 C-16.86216225 -7.56824319 -8.57158369 -6.5520199 0 0 Z " fill="#FB4A59" transform="translate(33.921875,11.72265625)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FFFFFF" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FFFFFF" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FFFF00" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FFFFFF" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FFFFFF" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
+<path d="" fill="#FF0000" transform="translate(0,0)"/>
 </svg>

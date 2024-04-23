@@ -1,5 +1,5 @@
 .anim1 {
-  animation: anim1_kf 7s ease 0s normal forwards;
+  animation: anim1_kf 3s ease 0s normal forwards;
   animation-iteration-count: infinite;
 }
 @keyframes anim1_kf {
@@ -22,7 +22,7 @@
 }
 
 .anim2 {
-  animation: anim2_kf 7s ease 0s normal forwards;
+  animation: anim2_kf 3s ease 0s normal forwards;
   animation-iteration-count: infinite;
 }
 @keyframes anim2_kf {
@@ -44,6 +44,54 @@
   }
 }
 
+/* Notifikation animation */
+.animNotif1 {
+  animation: animNotif1_kf 3s ease 0s normal forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes animNotif1_kf {
+  0% {
+    transform: translate(0);
+    box-shadow: 8px 8px 0px 2px var(--primary);
+    border-radius: 20px;
+  }
+
+  50% {
+    box-shadow: 4px 4px 0px 0px var(--primary);
+    transform: translate(5px, 5px);
+  }
+
+  100% {
+    transform: translate(0);
+    box-shadow: 8px 8px 0px 2px var(--primary);
+    border-radius: 20px;
+  }
+}
+
+.animNotif2 {
+  animation: animNotif2_kf 3s ease 0s normal forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes animNotif2_kf {
+  0% {
+    transform: translate(0);
+    box-shadow: 8px 8px 0px 2px var(--brandcolor);
+    border-radius: 20px;
+  }
+
+  50% {
+    box-shadow: 4px 4px 0px 0px var(--brandcolor);
+    transform: translate(5px, 5px);
+  }
+
+  100% {
+    transform: translate(0);
+    box-shadow: 8px 8px 0px 2px var(--brandcolor);
+    border-radius: 20px;
+  }
+}
+
+/* Pilanimation */
 @keyframes pilAnim_kf {
   0%,
   100% {
@@ -246,4 +294,11 @@
   90% {
     transform: rotate(2deg);
   }
+}
+.delay1 {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 0.5s;
 }

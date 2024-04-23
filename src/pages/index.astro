@@ -21,8 +21,18 @@ import "../styles/generel.css";
     <link rel="stylesheet" href="https://use.typekit.net/zkh1dpr.css" />
     <title>Webfeature</title>
   </head>
-  <body>
-    <header><Header /><Menu /></header>
+  <body
+    ><Header />
+    <header>
+      <Menu />
+    </header>
+    <style>
+      header {
+        position: sticky;
+        top: 0px;
+        z-index: 500;
+      }
+    </style>
     <main>
       <Taske />
 
@@ -46,6 +56,7 @@ import "../styles/generel.css";
         <Piechart variant="pie40p" procent="Vidste du at 40% af piger..." text="har på et tidspunkt i deres skolegang haft det svært ved at gå i skole" />
       </Section>
 
+      <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim5" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
       <Section id="telefon" icontrast="false" isrc="/public/telefon.svg" ialt="Illustration af telefon" ianim="ianim5" tidslinje="tidslinje1" circle="circle1" emne="SOCIALE MEDIER" bgcolor="accent3-bg" headcolor="secondary" textcolor="accent2"
         >Vidste du, at næsten 90% af teenagere i alderen 13-17 år bruger sociale medier regelmæssigt? Hos GirlTalk ønsker vi at udforske dette emne med dig og give dig værktøjer til at navigere i den digitale verden på en sund måde. <br />
         <br />
